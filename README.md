@@ -1,6 +1,6 @@
 # Simple Journal 🏕️
 
-A simple journal/photo log website built on top of [Blazin'](https://github.com/chrisssycollins/blazin). 
+A simple journal/photo log website built on top of [Blazin'](https://github.com/chrisssycollins/blazin-eleventy-boilerplate). 
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chrisssycollins/simple-journal)
 

@@ -1,0 +1,18 @@
+<header class="p-6 text-center">
+  <a href="/" title="{{ site.title }}" class="no-underline font-bold text-xl ">{{ site.title }}</a>
+
+  <nav class="mt-2">
+    <ul class="list-reset ">
+      <li class="inline"><a href="/">Log</a><span class="mx-1">·</span></li>
+
+      <li class="inline">
+        <a href="/about">About</a><span class="mx-1">·</span>
+      </li>
+      {% if site.social_meta.instagram %}
+      <li class="inline">
+        <a href="https://www.instagram.com/{{ site.social_meta.instagram }}">Instagram</a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+</header>

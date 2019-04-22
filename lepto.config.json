@@ -1,0 +1,17 @@
+{
+  "input": "src/assets/images/entries",
+  "output": "dist/assets/images/entries",
+  "gui": false,
+  "watch": false,
+  "filters": [
+    {
+      "glob": "**/*.{jpg,jpeg,png}",
+      "use": [
+        {
+          "name": "lepto-resize",
+          "maxWidth": 960
+        }
+      ]
+    }
+  ]
+}

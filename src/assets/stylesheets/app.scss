@@ -1,0 +1,25 @@
+@tailwind preflight;
+@tailwind components;
+
+body {
+  @apply .text-base;
+}
+
+a,
+a:visited {
+  @apply .text-black;
+}
+
+a:hover {
+  @apply .text-black .no-underline;
+}
+
+.shadow-xs {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+@tailwind utilities;

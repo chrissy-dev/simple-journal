@@ -4,6 +4,9 @@ A simple journal/photo log website built on top of [Blazin'/11ty](https://github
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chrisssycollins/simple-journal)
 
+---
+
+#[View demo](https://simplejournal.chriscollins.me)
 
 ## Features 
 

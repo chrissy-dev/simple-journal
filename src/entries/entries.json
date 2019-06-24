@@ -1,5 +1,5 @@
 {
   "layout": "layouts/entry",
   "tags": "entries",
-  "permalink": "{{ date | date: '%Y/%m/%d' }}/{{ name | slug }}/index.html"
+  "permalink": "{{ date | date: '%Y/%m/%d' }}/{{ name | slug | safe }}/index.html"
 }      

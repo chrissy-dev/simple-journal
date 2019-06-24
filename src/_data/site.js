@@ -5,6 +5,7 @@
 
   This file can be accessed using: {{ site.title }}
 */
+var version = require('../../package.json').version;
 
 module.exports = {
   title: "Simple Journal",
@@ -19,5 +20,6 @@ module.exports = {
     instagram: "scottishstoater",
     featured_image: "/assets/images/featured_image.jpg"
   },
-  ENV: process.env.ELEVENTY_ENV
+  ENV: process.env.ELEVENTY_ENV,
+  version
 };

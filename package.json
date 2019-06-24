@@ -4,21 +4,23 @@
   "description": "Log",
   "main": "index.js",
   "scripts": {
-    "css": "postcss src/assets/stylesheets/app.css -o src/assets/.compiled/app.css -w",
-    "start": "concurrently \"ELEVENTY_ENV=development eleventy --serve --watch\" \"npm run css\"",
-    "build": "del dist && ELEVENTY_ENV=production eleventy && purgecss --config ./purgecss.config.js --out src/_includes/stylesheets && ELEVENTY_ENV=production eleventy && lepto"
+    "css": "postcss src/assets/stylesheets/app.css -o src/assets/.compiled/app.css",
+    "css:watch": "postcss src/assets/stylesheets/app.css -o src/assets/.compiled/app.css --watch --verbose",
+    "start": "concurrently \"ELEVENTY_ENV=development eleventy --serve --watch\" \"npm run css:watch\"",
+    "build": "del dist && npm run css && ELEVENTY_ENV=production eleventy && purgecss --config ./purgecss.config.js --out src/_includes/stylesheets && ELEVENTY_ENV=production eleventy"
   },
   "author": "Chris Collins",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.8.2",
+    "@11ty/eleventy": "^0.8.3",
     "autoprefixer": "^9.4.7",
+    "clean-css": "^4.2.1",
     "concurrently": "^4.1.0",
     "del-cli": "^2.0.0",
-    "lepto-cli": "^1.2.0",
-    "lepto-resize": "^1.0.1",
+    "html-minifier": "^4.0.0",
     "postcss-cli": "^6.1.2",
+    "postcss-nested": "^4.1.2",
     "purgecss": "^1.1.0",
-    "tailwindcss": "^0.7.4"
+    "tailwindcss": "^1.0.4"
   }
 }

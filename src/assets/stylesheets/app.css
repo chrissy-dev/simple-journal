@@ -1,5 +1,6 @@
-@tailwind preflight;
+@tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 body {
   @apply .text-base;
@@ -7,7 +8,7 @@ body {
 
 a,
 a:visited {
-  @apply .text-black;
+  @apply .text-black .underline;
 }
 
 a:hover {
@@ -15,11 +16,91 @@ a:hover {
 }
 
 .shadow-xs {
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
 }
 
-.rotate {
-  transform: rotate(45deg);
-}
+.entry {
 
-@tailwind utilities;
+  @apply leading-normal;
+
+  /* Copy & Lists */
+  p {
+    @apply mb-0 mt-6
+  }
+
+  ul,
+  ol {
+    @apply my-6 list-inside;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  ul ul,
+  ol ul,
+  ul ol,
+  ol ol {
+    @apply my-0 ml-3;
+  }
+
+  blockquote {
+    @apply my-6
+  }
+
+  /* Headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply mb-0 mt-6 leading-tight font-bold;
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  h4 {
+    @apply text-lg;
+  }
+
+  h5 {
+    @apply text-base;
+  }
+
+  h6 {
+    @apply text-sm;
+  }
+
+  /* Tables */
+  table {
+    margin-top: 1.5rem;
+    border-spacing: 0px;
+    border-collapse: collapse;
+  }
+
+  table td,
+  table th {
+    padding: 0;
+    line-height: 33px;
+  }
+
+  /* Code blocks */
+  code {
+    vertical-align: bottom;
+  }
+}

@@ -10,7 +10,7 @@ pagination:
 {% for entry in sorted %}
 <a href="{{ entry.url}}" class="no-underline leading-tight">
    <article class="rounded p-2 -mx-2 bg-white border-b-1 flex items-center justify-between hover:bg-gray-100">
-      <h2 class="inline text-base font-normal flex items-center">{{ entry.data.name }}</h2>
+      <h2 class="inline text-base font-normal flex items-center">{{ entry.data.title }}</h2>
       <small class="text-gray-500">{{ entry.date | date: "%d/%m/%y" }}</small>
    </article>
 </a>

@@ -25,12 +25,16 @@
   <meta name="twitter:site" content="{{ site.social_meta.twitter }}" />
   <meta name="twitter:creator" content="{{ site.social_meta.twitter }}" />
   {% endif %}
+  {% if site.ENV == 'production' %}
   <!-- capture the CSS content as a Liquid variable -->
   {% capture css %}{% include stylesheets/app.css %}{% endcapture %}
   <!-- feed it through our cssmin filter to minify -->
   <style>
     {{ css | cssmin | safe }}
   </style>
+  {% else %}
+  <link rel="stylesheet" href="/assets/.compiled/app.css">
+  {% endif %}
 </head>
 
 <body class="p-4 md:p-6 bg-grey-lightest">

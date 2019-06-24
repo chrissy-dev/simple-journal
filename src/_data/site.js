@@ -7,15 +7,15 @@
 */
 
 module.exports = {
-  title: "Hiking & Camping Log",
+  title: "Simple Journal",
   url: "https://log.chriscollins.me", // Don't end with a slash /
-  description: "Personal Hiking Log",
+  description: "Writing Random Thoughts",
   copyright: {
     from: "2003",
     name: "Chris Collins"
   },
   social_meta: {
-    twitter: "@chrisssycollins",
+    twitter: "@scottishstoater",
     instagram: "scottishstoater",
     featured_image: "/assets/images/featured_image.jpg"
   },

@@ -6,8 +6,7 @@ layout: layouts/base
   <main>
     <div class="text-center">
       <h2 class="font-base mb-1">{{ name }}</h2>
-      <small class="text-grey-dark">{{ date | date: "%d" | ordinal }} {{ date | date: "%B %Y" }} {% if dug %}· 🐶 {% endif %} {% if summited %} ·
-        Summited{% endif %} {% if munro %} · Munro{% endif %}</small>
+      <small class="text-grey-dark">{{ date | date: "%d" | ordinal }} {{ date | date: "%B %Y" }}</small>
     </div>
     {% if content.length > 0 %}
     <article class="mt-6 leading-normal text-center">

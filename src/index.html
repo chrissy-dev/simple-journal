@@ -10,11 +10,7 @@ pagination:
 {% for entry in sorted %}
 <a href="{{ entry.url}}" class="no-underline">
    <article class="rounded p-2 -mx-2 bg-white border-b-1 flex items-center justify-between hover:bg-grey-lightest">
-      <h2 class="inline text-base font-normal flex items-center"> {{ entry.data.name }}
-         {% if entry.data.dug %} <img src="/assets/images/bone.svg" class="w-4 mx-1" alt="Dog">{% endif %}
-         {% if entry.data.camping %} <img src="/assets/images/camp.svg" class="w-4 mx-1" alt="Camp"> {% endif %}
-         {% if entry.data.munro %} <img src="/assets/images/climb.svg" class="w-4 mx-1" alt="Munro"> {% endif %}
-      </h2>
+      <h2 class="inline text-base font-normal flex items-center">{{ entry.data.name }}</h2>
       <small class="text-grey-dark">{{ entry.date | date: "%d/%m/%y" }}</small>
    </article>
 </a>

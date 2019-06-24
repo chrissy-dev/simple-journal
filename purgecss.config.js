@@ -1,6 +1,6 @@
 module.exports = {
   content: ["dist/**/*.html"],
-  css: ["src/_includes/stylesheets/app.css"],
+  css: ["src/assets/.compiled/app.css"],
   // You can remove the extractors section if not using TailwindCSS
   extractors: [
     {

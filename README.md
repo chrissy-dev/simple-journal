@@ -6,7 +6,7 @@ A simple journal/photo log website built on top of [Blazin'/11ty](https://github
 
 ---
 
-### [View demo](https://simplejournal.chriscollins.me)
+### [View demo](https://simplejournal.netlify.app)
 
 ## Features 
 

@@ -10,7 +10,7 @@
   "author": "Chris Collins",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.8.2",
+    "@11ty/eleventy": "^1.0.2",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "autoprefixer": "^9.4.7",
